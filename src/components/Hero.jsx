@@ -23,7 +23,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-7 text-[clamp(16px,1.3vw,19px)] leading-[1.55] text-neutral-600 dark:text-neutral-400 max-w-[520px]">
-            Keiwa gère commandes, réservations, FAQ et plaintes sur WhatsApp,
+            KeiwaBot gère commandes, réservations, FAQ et plaintes sur WhatsApp,
             widget web, Telegram, SMS et appel vocal (Premium), avec une
             politique client générée en 5 minutes.
           </p>

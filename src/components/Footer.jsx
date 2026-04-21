@@ -13,10 +13,10 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-[10px] bg-primary-600 text-white grid place-items-center font-bold text-base">
                 K
               </div>
-              <span className="text-neutral-900 dark:text-white">Keiwa</span>
+              <span className="text-neutral-900 dark:text-white">KeiwaBot</span>
             </a>
             <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-[1.55] mt-4 max-w-[300px]">
-              Keiwa Customer AI, plateforme SaaS d'agents IA conversationnels
+              KeiwaBot Customer AI, plateforme SaaS d'agents IA conversationnels
               pour restaurants, hôtels et salons. Construit à Abidjan.
             </p>
             <div className="flex gap-3 mt-5">
@@ -83,7 +83,8 @@ export default function Footer() {
 
         <div className="flex flex-wrap justify-between items-center gap-4 pt-6 border-t border-neutral-200 dark:border-neutral-800 text-[13px] text-neutral-500 dark:text-neutral-500">
           <div>
-            © 2026 Keiwa Customer AI · contact@keiwa.ci · +225 XX XX XX XX XX
+            © 2026 KeiwaBot - Customer AI · contact@KeiwaBot.ci · +225 XX XX XX
+            XX XX
           </div>
         </div>
       </div>

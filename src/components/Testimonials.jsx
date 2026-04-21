@@ -1,10 +1,25 @@
-import { Star } from '../icons'
+import { Star } from "../icons";
 
 const ITEMS = [
-  { quote: 'Depuis qu\'on utilise Keiwa, on ne rate plus aucune commande le soir. Mes serveurs sont concentrés sur la salle, pas sur leur téléphone.', name: 'Rita K.', role: 'Gérante, Maquis Chez Rita · Cocody' },
-  { quote: 'J\'ai gagné 20 chambres réservées par mois juste parce que l\'agent répond à minuit. Ça paie largement l\'abonnement.', name: 'Bakary S.', role: 'Directeur, Hôtel Les Baobabs · Marcory' },
-  { quote: 'Mes clientes adorent les rappels la veille. Moins de no-show, et elles arrivent préparées. Pour moi c\'est du temps en or.', name: 'Awa D.', role: 'Propriétaire, Salon Awa Beauty · Yopougon' },
-]
+  {
+    quote:
+      "Depuis qu'on utilise KeiwaBot, on ne rate plus aucune commande le soir. Mes serveurs sont concentrés sur la salle, pas sur leur téléphone.",
+    name: "Rita K.",
+    role: "Gérante, Maquis Chez Rita · Cocody",
+  },
+  {
+    quote:
+      "J'ai gagné 20 chambres réservées par mois juste parce que l'agent répond à minuit. Ça paie largement l'abonnement.",
+    name: "Bakary S.",
+    role: "Directeur, Hôtel Les Baobabs · Marcory",
+  },
+  {
+    quote:
+      "Mes clientes adorent les rappels la veille. Moins de no-show, et elles arrivent préparées. Pour moi c'est du temps en or.",
+    name: "Awa D.",
+    role: "Propriétaire, Salon Awa Beauty · Yopougon",
+  },
+];
 
 export default function Testimonials() {
   return (
@@ -20,9 +35,14 @@ export default function Testimonials() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {ITEMS.map((t, i) => (
-          <div key={i} className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 flex flex-col gap-5">
+          <div
+            key={i}
+            className="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-8 flex flex-col gap-5"
+          >
             <div className="flex gap-0.5 text-accent-500">
-              {[0,1,2,3,4].map(j => <Star key={j} size={14} />)}
+              {[0, 1, 2, 3, 4].map((j) => (
+                <Star key={j} size={14} />
+              ))}
             </div>
             <p className="text-[17px] leading-[1.5] tracking-[-0.01em] text-neutral-800 dark:text-neutral-200 flex-1">
               «&nbsp;{t.quote}&nbsp;»
@@ -32,13 +52,17 @@ export default function Testimonials() {
                 {t.name.charAt(0)}
               </div>
               <div>
-                <div className="text-sm font-semibold text-neutral-900 dark:text-white">{t.name}</div>
-                <div className="text-xs text-neutral-500 dark:text-neutral-500">{t.role}</div>
+                <div className="text-sm font-semibold text-neutral-900 dark:text-white">
+                  {t.name}
+                </div>
+                <div className="text-xs text-neutral-500 dark:text-neutral-500">
+                  {t.role}
+                </div>
               </div>
             </div>
           </div>
         ))}
       </div>
     </section>
-  )
+  );
 }
